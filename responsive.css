@@ -1,0 +1,108 @@
+@media (max-width: 768px) {
+  .logo a {
+    margin-left: 10px;
+  }
+
+  .home-content {
+    flex-direction: column-reverse;
+    margin: auto;
+    gap: 1rem;
+  }
+
+  .hero-left h2,
+  .hero-left p,
+  .hero-left h1 {
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .toggle-burger .line-1 {
+    transform: rotate(-45deg) translate(-5px, 7px);
+  }
+
+  .toggle-burger .line-2 {
+    opacity: 0;
+  }
+
+  .toggle-burger .line-3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  nav {
+    position: fixed;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    background: black;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: 0.2s ease-in-out;
+  }
+
+  nav ul {
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  .nav-active {
+    transform: translateX(0);
+  }
+
+  .grid-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .portofolio-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .portofolio,
+  .portofolio img {
+    width: 300px;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .education img {
+    height: 590px;
+    width: 100px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
